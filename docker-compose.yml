@@ -1,0 +1,24 @@
+version: '3.4'
+
+services:
+  apigateway:
+    container_name: apigateway
+    image: ghcr.io/after-dark-communications/q1-2022-apigateway:latest
+    ports:
+      - "6942:80" #it don't find the surveys, it do find the normal page
+
+  survey-service:
+    container_name: surveyservice
+    image: ghcr.io/after-dark-communications/q1-2022-express-survey-service:latest
+    ports:
+      - "5002:3000"
+  
+  db:
+      container_name: database
+      image: mongo
+      ports:
+        - 27017:27017
+    #build: 
+     # context: .
+      #dockerfile: Q1-ApiGateway-2022/Dockerfile
+    #command: ghcr.io/after-dark-communications/q1-2022-apigateway:latest --urls=http://localhost:7680/
