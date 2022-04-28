@@ -12,7 +12,19 @@ services:
     image: ghcr.io/after-dark-communications/q1-2022-express-survey-service:latest
     ports:
       - "5002:3000"
+
+  email-service:
+    container_name: emailservice
+    image: ghcr.io/after-dark-communications/q1-2022-email-service:latest
+    ports:
+      - "6943:80"
   
+  token-service:
+    container_name: tokenservice
+    image: ghcr.io/after-dark-communications/q1-2022-token-service:latest
+    ports:
+     - "8361:80"
+
   db:
       container_name: database
       image: mongo

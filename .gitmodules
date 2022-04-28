@@ -1,0 +1,15 @@
+[submodule "Q1-2022-APIGateway"]
+	path = Q1-2022-APIGateway
+	url = ../Q1-2022-APIGateway
+[submodule "Q1-2022-email-service"]
+	path = Q1-2022-email-service
+	url = ../Q1-2022-email-service
+[submodule "Q1-2022-Express-Survey-Service"]
+	path = Q1-2022-Express-Survey-Service
+	url = ../Q1-2022-Express-Survey-Service
+[submodule "Q1-2022-token-service"]
+	path = Q1-2022-token-service
+	url = ../Q1-2022-token-service
+[submodule "Q1-2022-Frontend"]
+	path = Q1-2022-Frontend
+	url = https://github.com/After-Dark-Communications/Q1-2022-Frontend
