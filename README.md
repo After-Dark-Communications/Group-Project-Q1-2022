@@ -7,3 +7,16 @@
 ***
 
 [Todo list of things to do](https://github.com/orgs/After-Dark-Communications/projects/1/views/5)
+
+
+---
+
+### Submodules
+
+most git desktop applications will automatically clone the submodules repositories when this repository is cloned.
+
+If the submodule folders are empty (folders titled Q1-2022-...), open git in the repository folder and use the following command:
+```bash
+    git clone --recurse-submodules
+```
+this will clone the repositories where those submodules are from.
