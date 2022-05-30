@@ -21,6 +21,11 @@ If the submodule folders are empty (folders titled Q1-2022-...), open git in the
 ```
 this will clone the repositories where those submodules are from.
 
+To update the submodules, making them up-to-date with the latest commits, use the following command:
+```bash
+    git submodule update --remote
+```
+This will get the latest commits on their respective branches
 
 ---
 
