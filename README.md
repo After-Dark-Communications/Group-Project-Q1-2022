@@ -10,6 +10,16 @@
 
 
 ---
+### Running the project
+
+To run the application, you will have to run the docker-compose file. To do this, use the following command:
+```bash
+    docker-compose up -d
+```
+This will create/update the containers from the latest images and run them detached (won't output anything to console).  
+Everything will be bundled inside a "group-project-q1-2022" application with all the services as containers.
+
+---
 
 ### Submodules
 
