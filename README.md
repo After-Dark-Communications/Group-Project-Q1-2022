@@ -20,3 +20,36 @@ If the submodule folders are empty (folders titled Q1-2022-...), open git in the
     git clone --recurse-submodules
 ```
 this will clone the repositories where those submodules are from.
+
+
+---
+
+### How to Run
+use "docker-compose up -d" to run the application in detached mode. This will run it within the docker environment and not output to the console.
+
+#### How to add new container
+
+- open the "docker-compose.yml" file
+- under "services", add a new service in the following structure:
+everything between <> will have to be replaced by the value of your choice
+```
+    <service name>:
+      container_name: <container name>
+      image: <image tag>
+      ports:
+      - "<external port to listen to>:<internal exposed port>"
+```
+the container name has to abide by the docker rules (no spaces and only ascii)
+
+#### How to add container information
+
+- open the "docker-compose.override.yml" file
+- under services add the service in the following structure:
+```
+    <service name>:
+      *enivronment:
+        - <environment variable>
+      *volumes:
+        - <volume directory>
+```
+the *names are examples, they are not mandatory to add
